@@ -1,65 +1,38 @@
-public class Product {
+package com.example;
 
+public class Product {
     private String id;
-    private String name;
-    private double price;
+    private String nombre;
+    private double precio;
     private int stock;
 
-    public Product() {
-        this.id = null;
-        this.name = null;
-        this.price = 0.0;
-        this.stock = 0;
-    }
+    // Constructor por defecto
+    public Product() {}
 
-    public Product(String id, String name, double price, int stock) {
+    // Constructor parametrizado
+    public Product(String id, String nombre, double precio, int stock) {
         this.id = id;
-        this.name = name;
-        this.price = price;
+        this.nombre = nombre;
+        this.precio = precio;
         this.stock = stock;
     }
 
-    public String getId() {
-        return id;
-    }
+    // Getters
+    public String getId() { return id; }
+    public String getNombre() { return nombre; }
+    public double getPrecio() { return precio; }
+    public int getStock() { return stock; }
 
-    public String getName() {
-        return name;
-    }
+    // Setters
+    public void setId(String id) { this.id = id; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setPrecio(double precio) { this.precio = precio; }
+    public void setStock(int stock) { this.stock = stock; }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(double price) {
-        if (price >= 0) {
-            this.price = price;
-        }
-    }
-
-    public void setStock(int stock) {
-        if (stock >= 0) {
-            this.stock = stock;
-        }
-    }
-
+    // toString
     @Override
     public String toString() {
-        return "Producto [ID: " + id +
-               ", Nombre: " + name +
-               ", Precio: " + price +
-               ", Stock: " + stock + "]";
+        return "Producto [ID: " + id + ", Nombre: " + nombre +
+               ", Precio: " + precio + ", Stock: " + stock + "]";
     }
 }
