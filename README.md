@@ -1,12 +1,22 @@
-# Actividad 3 - Implementación de Clases Java
+## 🧩 Descripción
 
-## Descripción
-Este proyecto implementa una clase `Product` en Java que demuestra el uso de atributos, constructores, getters, setters y el método toString().
+El programa crea objetos de la clase `Product` utilizando:
 
-## Archivos del proyecto
-- Product.java
-- Main.java
+- ✔ Constructor por defecto  
+- ✔ Constructor parametrizado  
+- ✔ Métodos *setter* para modificar atributos  
+- ✔ Métodos *getter* para obtener valores  
 
-## Compilación
+---
+
+## ⚙️ Requisitos
+
+- Java JDK 8 o superior  
+- Terminal o consola  
+- Editor como Visual Studio Code  
+
+Verificar instalación:
+
 ```bash
-javac Product.java Main.java
+java -version
+javac -version

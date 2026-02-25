@@ -1,9 +1,30 @@
-# Archivos compilados de Java
-*.class
+# 📦 Proyecto Java: Gestión de Productos
 
-# Archivos del sistema
-.DS_Store
-Thumbs.db
+Este proyecto demuestra el uso de clases, constructores, setters/getters y el método toString() en Java mediante la creación y manipulación de objetos `Product`.
 
-# Configuración de VS Code
-.vscode/
+---
+
+## 📁 Estructura del Proyecto
+
+actividad3-java/
+│
+├── src/
+│ └── main/
+│ └── java/
+│ └── com/example/
+│ ├── Main.java
+│ └── Product.java
+│
+└── README.md
+
+## ⚙️ Requisitos
+
+- Java JDK 8 o superior  
+- Terminal o consola  
+- Editor como Visual Studio Code  
+
+Verificar instalación:
+
+```bash
+java -version
+javac -version
